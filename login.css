@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: transparent !important; 
+  background-image: url("2885658.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+
+.login_main_heading{
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(63, 199, 0);
+  border-radius: 20px;
+  margin: 20px;
+}
+
+button:hover {
+  transition: margin 0.2s ease-in-out;
+  margin-top: -5px;
+  box-shadow: 10px 1px 20px black; 
+  background-color: yellow;
+}
+
+
+div {
+  border: 5px solid;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 80px;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+#uname,
+#email,#pwd{
+  border-bottom: 2px solid yellow;
+  background-color: transparent;
+  outline: none;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  width: 60%;
+}
+
+label {
+  font-size: 1.4em;
+  color: aliceblue;
+  font-weight: 700;
+  text-shadow: 3px 3px 3px black;
+}
+
+::placeholder {
+  color: white;
+}
+
+button {
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    padding-right:30px;
+    padding-left:30px;
+    background-color: yellowgreen;
+    border-radius: 20px;
+    margin: 20px;
+    font-size:1.2rem;
+    cursor:pointer;
+}
+

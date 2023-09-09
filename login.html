@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    
+    <form id="loginForm">
+    <div class="main_content">
+      <h2 class="login_main_heading">Login</h2> 
+      <br>
+      
+      <label for="uname">U-name :</label>
+      <input type="text" id="uname" placeholder="abc" />
+      <br />
+      <br />
+      <label for="email">E-mail :</label>
+      <input type="email" id="email" placeholder="example@gmail.com" />
+      <br>
+      <br>
+      <label for="pwd">Password :</label>
+      <input type="password" id="pwd" placeholder="***********" />
+      <br />
+      <br />
+      <br>
+      
+      <br />
+      <button class="submit">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp; <button>Help</button>
+      <br>
+    </form>
+      <script>
+        // JavaScript code for form validation
+        const form = document.getElementById('loginForm');
+        form.addEventListener('submit', function(event) {
+          const uname = document.getElementById('uname');
+          const email = document.getElementById('email');
+          const pwd = document.getElementById('pwd');
+    
+          if (uname.value.trim() === '') {
+            alert('Username is required.');
+            event.preventDefault();
+          }
+    
+          if (email.value.trim() === '') {
+            alert('Email is required.');
+            event.preventDefault();
+          }
+    
+          if (pwd.value.trim() === '') {
+            alert('Password is required.');
+            event.preventDefault();
+          }
+        });
+      </script>
+      
+    </div>
+  </body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+<body>
+  <div class="main_content">
+    <h2 class="login_main_heading">Login</h2> 
+    <br>
+    
+    <form id="loginForm">
+      <label for="uname">U-name :</label>
+      <input type="text" id="uname" placeholder="abc" required />
+      <br />
+      <br />
+      <label for="email">E-mail :</label>
+      <input type="email" id="email" placeholder="example@gmail.com" required />
+      <br>
+      <br>
+      <label for="pwd">Password :</label>
+      <input type="password" id="pwd" placeholder="***********" required />
+      <br />
+      <br />
+      <br>
+      
+      <br />
+      <button class="submit" type="submit">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp; <button id="helpBtn">Help</button>
+      <br>
+    </form>
+    <p id="message" style="display: none;">Form submitted successfully!</p>
+  </div>
+
+  <script>
+    const form = document.getElementById('loginForm');
+    const message = document.getElementById('message');
+    const helpBtn = document.getElementById('helpBtn');
+
+    form.addEventListener('submit', function(event) {
+      const uname = document.getElementById('uname');
+      const email = document.getElementById('email');
+      const helpBtn = document.getElementById('helpBtn');
+      const pwd = document.getElementById('pwd');
+
+      if (uname.value.trim() === '' || email.value.trim() === '' || pwd.value.trim() === '') {
+        alert('Please fill in all fields.');
+        event.preventDefault();
+      } else {
+        // Simulate form submission (replace with actual submission logic)
+        event.preventDefault();
+        message.style.display = 'block';
+        setTimeout(function() {
+          message.style.display = 'none';
+        }, 3000);
+      }
+    });
+
+    helpBtn.addEventListener('click', function() {
+      alert('If you need help, please contact support.');
+    });
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent actual form submission
+      alert('Form submitted successfully!');
+    });
+
+    helpBtn.addEventListener('click', function() {
+      alert('If you need help, please contact support.');
+    });
+  </script>
+</body>
+</html> -->
